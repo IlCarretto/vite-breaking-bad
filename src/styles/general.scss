@@ -1,0 +1,12 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ms-container {
+    width: 70%;
+    margin: 0 auto;
+}
