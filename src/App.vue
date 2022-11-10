@@ -9,8 +9,16 @@ export default {
   },
   data() {
     return {
-
+      store
     }
+  },
+  created() {
+    axios
+    .get("https://www.breakingbadapi.com/api/characters")
+    .then((resp) => {
+      this.store.characters = resp.data;
+      console.log(store.characters);
+    })
   }
 }
 </script>
@@ -19,7 +27,7 @@ export default {
 <AppMain/>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "./styles/general.scss" as *;
 
 </style>
