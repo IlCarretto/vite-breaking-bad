@@ -38,6 +38,10 @@ export default {
                 font-size: 1rem;
                 text-transform: uppercase;
             }
+
+            p {
+                color: grey;
+            }
         }
     }
 
