@@ -16,7 +16,7 @@ export default {
     <section>
         <h1>Breaking Bad Api</h1>
         <div class="container">
-            <select class="form-select" v-model="store.searchCategory" @change="$emit('searchSelect')">
+            <select class="form-select mb-3" v-model="store.searchCategory" @change="$emit('searchSelect')">
                 <option selected value="">Select Category</option>
                 <option v-for="(option, index) in categoryOptions" :key="index">{{option}}</option>
             </select>

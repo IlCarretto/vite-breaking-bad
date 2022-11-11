@@ -15,13 +15,7 @@ export default {
     }
   },
   created() {
-    // axios
-    // .get("https://www.breakingbadapi.com/api/characters")
-    // .then((resp) => {
-    //   this.store.characters = resp.data;
-    //   console.log(store.characters);
-    // })
-    // this.chooseCategory();
+    this.chooseCategory();
   },
   methods: {
     chooseCategory() {
