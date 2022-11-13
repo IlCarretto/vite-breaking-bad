@@ -16,14 +16,22 @@ export default {
     <section>
         <h1>Breaking Bad Api</h1>
         <div class="container">
-            <select class="form-select mb-3" v-model="store.searchCategory" @change="$emit('searchSelect')">
-                <option selected value="">Select Category</option>
-                <option v-for="(option, index) in categoryOptions" :key="index">{{option}}</option>
-            </select>
+            <div class="div mb-3">
+                <input class="form-control" type="text">
+                <select class="form-select" v-model="store.searchCategory" @change="$emit('searchSelect')">
+                    <option selected value="">Select Category</option>
+                    <option v-for="(option, index) in categoryOptions" :key="index">{{option}}</option>
+                </select>
+                <button class="btn btn-primary">
+                    a
+                </button>
+            </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
-
+    .div {
+        display: flex;
+    }
 </style>

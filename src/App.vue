@@ -26,9 +26,9 @@ export default {
       
       // Se viene scelta l'opzione breaking bad, mostrare i personaggi di breaking bad
       // Se viene scelta l'opzione better call saul, mostrare i personaggi di better call saul
-      // if (this.store.searchCategory) {
-      //   apiUrl += `?category=${this.store.searchCategory}`
-      // } 
+      if (this.store.searchCategory) {
+        apiUrl += `?category=${this.store.searchCategory}`
+      } 
 
       axios
       .get(apiUrl)
